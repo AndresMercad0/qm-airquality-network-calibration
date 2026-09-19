@@ -1,0 +1,63 @@
+{
+  "paths": {
+    "output_html": "figures/output/fig05_cross_node_protocol.html",
+    "output_image": "figures/output/fig05_cross_node_protocol.png"
+  },
+  "viewport": {
+    "width_px": 720,
+    "height_px": 470,
+    "device_scale_factor": 2
+  },
+  "palette": {
+    "background": "#FFFFFF",
+    "box_bg": "#F7F8FA",
+    "box_border": "#3E4E6E",
+    "separator": "#DADFE5",
+    "arrow": "#4A3A7A",
+    "arrow_label": "#4A3A7A",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_accent": "#4A3A7A"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "node_title_px": 36,
+    "node_site_px": 27,
+    "node_location_px": 21,
+    "ref_label_px": 23,
+    "arrow_label_px": 21,
+    "formula_px": 27,
+    "formula_sub_px": 19
+  },
+  "layout": {
+    "box1_x": 40,
+    "box2_x": 470,
+    "box_y": 75,
+    "box_w": 210,
+    "box_h": 240,
+    "box_radius": 10,
+    "arrow_lw": 2.2,
+    "border_lw": 2.0,
+    "arc_amplitude": 55
+  },
+  "content": {
+    "node1": {
+      "label": "Node 3",
+      "site": "QMUL",
+      "location": "Mile End Road",
+      "reference": "Reference:  TH2"
+    },
+    "node2": {
+      "label": "Node 5",
+      "site": "KEMP",
+      "location": "Glamis Rd. & A1203",
+      "reference": "Reference:  TH7"
+    },
+    "arrow_top_label_line1": "Model trained at Node 3,",
+    "arrow_top_label_line2": "transferred to Node 5",
+    "arrow_bottom_label_line1": "Model trained at Node 5,",
+    "arrow_bottom_label_line2": "transferred to Node 3",
+    "formula": "ΔR² = R²_transferred − R²_local",
+    "formula_sub": "OLS input from the source (direct) or refitted locally (OLS-refitted)"
+  }
+}

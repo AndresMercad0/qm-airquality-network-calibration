@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+data/node_*/
+results/**/models/
+results/**/plots/
+figures/output/
+results/**/resultado_*/
+results/**/reporte_*.md
+results/**/config_v3.json

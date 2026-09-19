@@ -1,0 +1,100 @@
+{
+  "paths": {
+    "output_html": "figures/output/fig02_pipeline_flowchart.html",
+    "output_image": "figures/output/fig02_pipeline_flowchart.png"
+  },
+
+  "viewport": {
+    "width_px": 1240,
+    "height_px": 1020,
+    "device_scale_factor": 2
+  },
+
+  "layout": {
+    "margin": { "top": 95, "right": 30, "bottom": 45, "left": 30 },
+    "col_x": [160, 515, 870],
+    "row_y": [165, 350, 535, 720, 905],
+    "box_w": 260,
+    "box_h": 130,
+    "box_rx": 14,
+    "box_arrow_pad": 12,
+    "phase_label_x": 1025,
+    "separators_between_rows": [[2, 3], [4, 5]]
+  },
+
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "stage_text_px": 29,
+    "stage_text_compact_px": 29,
+    "stage_id_px": 24,
+    "phase_label_px": 31,
+    "legend_px": 27,
+    "arrow_linewidth": 3.6,
+    "arrowhead_w": 21,
+    "arrowhead_h": 17,
+    "box_border_regular_w": 1.6,
+    "box_border_calib_w": 2.4,
+    "separator_linewidth": 2.0,
+    "text_padding_x": 10,
+    "char_width_ratio": 0.48
+  },
+
+  "palette": {
+    "background":        "#FFFFFF",
+    "box_bg_regular":    "#FAFBFC",
+    "box_bg_calib":      "#EBE8F2",
+    "box_border_regular": "#D8DCE4",
+    "box_border_calib":   "#4A3A7A",
+    "stage_id_regular":  "#6F7684",
+    "stage_id_calib":    "#4A3A7A",
+    "stage_text":        "#1F1F1F",
+    "arrow":             "#9DA0AA",
+    "phase_label":       "#5F6672",
+    "separator":         "#C9CDD6",
+    "text_primary":      "#1F1F1F",
+    "text_secondary":    "#5F6672"
+  },
+
+  "calib_stages": ["s6", "s7", "s8"],
+
+  "stages": [
+    { "id": "s0",  "label": "Download\nraw data",                "row": 1, "col": 0 },
+    { "id": "s1",  "label": "QC filter\n(low-cost sensors)",     "row": 1, "col": 1 },
+    { "id": "s2",  "label": "Convert Alphasense\nvoltage to μg/m³", "row": 1, "col": 2 },
+    { "id": "s3",  "label": "QC filter\n(Alphasense)",           "row": 2, "col": 2 },
+    { "id": "s4",  "label": "Preprocess\nRS, $R_0$, ratio",      "row": 2, "col": 1 },
+    { "id": "s5",  "label": "Assemble\nfinal dataset",           "row": 3, "col": 0 },
+    { "id": "s6",  "label": "Calibrate:\nManufacturer curves",   "row": 3, "col": 1 },
+    { "id": "s7",  "label": "Calibrate:\nOLS + T/RH",            "row": 3, "col": 2 },
+    { "id": "s8",  "label": "Calibrate:\nMachine Learning",      "row": 4, "col": 2 },
+    { "id": "s9",  "label": "Evaluate\nall methods",             "row": 4, "col": 1 },
+    { "id": "s10", "label": "Cross-node\ntransfer validation",   "row": 5, "col": 0 }
+  ],
+
+  "arrows": [
+    { "from": "s0",  "to": "s1",  "kind": "right" },
+    { "from": "s1",  "to": "s2",  "kind": "right" },
+    { "from": "s2",  "to": "s3",  "kind": "down" },
+    { "from": "s3",  "to": "s4",  "kind": "left" },
+    { "from": "s4",  "to": "s5",  "kind": "diag_dl" },
+    { "from": "s5",  "to": "s6",  "kind": "right" },
+    { "from": "s6",  "to": "s7",  "kind": "right" },
+    { "from": "s7",  "to": "s8",  "kind": "down" },
+    { "from": "s8",  "to": "s9",  "kind": "left" },
+    { "from": "s9",  "to": "s10", "kind": "diag_dl" }
+  ],
+
+  "phase_labels": [
+    { "text": "Data\nacquisition &\npreprocessing", "rows": [1, 2] },
+    { "text": "Calibration\n& evaluation",          "rows": [3, 4] },
+    { "text": "Spatial\ntransfer",                  "rows": [5]    }
+  ],
+
+  "legend": {
+    "text": "= Calibration method",
+    "x": 30,
+    "y": 52,
+    "swatch_w": 40,
+    "swatch_h": 26
+  }
+}

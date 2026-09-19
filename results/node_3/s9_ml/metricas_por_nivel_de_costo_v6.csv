@@ -1,0 +1,11 @@
+r2,rmse,nrmse,mae,mbe,pearson_r,nivel,n,mean_ref,mean_est,gas,nivel_costo,metodo,referencia,col_estimado,col_referencia,basis
+-0.3108,12.1,63.2,10.12,8.47,0.6572,Inaceptable,5185,,,NO2,Mid-cost,Cal. parámetros de fábrica (AAN-803-05),no2_high_met_one_ug_m3,no2_mid_alphasense_ug_m3_aan803,no2_high_met_one_ug_m3,intersection_test_v6
+-0.158,11.37,59.4,8.44,-7.44,0.6481,Inaceptable,5185,,,NO2,Mid-cost OLS,"OLS colocalización (Alphasense NO₂-B43F), solo entrenamiento",no2_high_met_one_ug_m3,c_hat_ols_NO2_alpha,no2_high_met_one_ug_m3,intersection_test_v6
+-1067531.2929,10913.37,56577.8,7873.75,7871.9,0.7925,Inaceptable,5174,,,NO2,Low-cost curvas fab.,Curva fabricante GM-102B,no2_high_met_one_ug_m3,no2_low_mgsv2_ug_m3_curvas_fabricante,no2_high_met_one_ug_m3,intersection_test_v6
+0.3304,8.64,44.8,6.41,-3.42,0.6782,Inaceptable,5174,,,NO2,Low-cost OLS,"OLS colocalización, solo entrenamiento",no2_high_met_one_ug_m3,c_hat_ols_NO2,no2_high_met_one_ug_m3,intersection_test_v6
+-934.9982,2823.56,2053.3,2082.8,2082.8,0.8786,Inaceptable,6271,,,CO,Low-cost curvas fab.,Curva fabricante GM-702B,co_mid_alphasense_ug_m3_aan803,co_low_mgsv2_ug_m3_curvas_fabricante,co_mid_alphasense_ug_m3_aan803,intersection_test_v6
+0.6464,54.88,39.9,37.36,1.17,0.8118,Marginal,6271,,,CO,Low-cost OLS,"OLS colocalización, solo entrenamiento",co_mid_alphasense_ug_m3_aan803,c_hat_ols_CO,co_mid_alphasense_ug_m3_aan803,intersection_test_v6
+-11.686,71.45,511.1,35.8,27.36,-0.3257,Inaceptable,6271,,,O3,Low-cost curvas fab.,Curva fabricante MQ131,o3_mid_alphasense_ug_m3_aan803,o3_low_mq131_ug_m3_curvas_fabricante,o3_mid_alphasense_ug_m3_aan803,intersection_test_v6
+-0.6116,25.47,182.2,20.8,-6.12,-0.0901,Inaceptable,6271,,,O3,Low-cost OLS,"OLS colocalización, solo entrenamiento",o3_mid_alphasense_ug_m3_aan803,c_hat_ols_O3,o3_mid_alphasense_ug_m3_aan803,intersection_test_v6
+0.6143,4.79,48.5,3.46,0.1,0.8843,Marginal,6144,,,PM2.5,Low-cost (cal. fabricante),Calibración del fabricante,pm2_5_high_met_one_ug_m3,pm2_5_low_sps30_ug_m3,pm2_5_high_met_one_ug_m3,intersection_test_v6
+0.7796,3.62,36.7,2.65,-0.06,0.8834,Marginal,6144,,,PM2.5,Low-cost OLS,"OLS colocalización, solo entrenamiento",pm2_5_high_met_one_ug_m3,c_hat_ols_PM2.5,pm2_5_high_met_one_ug_m3,intersection_test_v6

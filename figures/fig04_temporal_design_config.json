@@ -1,0 +1,135 @@
+{
+  "paths": {
+    "output_html": "figures/output/fig04_temporal_design.html",
+    "output_image": "figures/output/fig04_temporal_design.png"
+  },
+  "viewport": {
+    "width_px": 1400,
+    "height_px": 600,
+    "device_scale_factor": 2
+  },
+  "axis": {
+    "start": "2025-04-01",
+    "end": "2026-03-01",
+    "month_ticks_from": "2025-04-01",
+    "n_months": 11
+  },
+  "plot": {
+    "margin": {
+      "top": 150,
+      "right": 40,
+      "bottom": 70,
+      "left": 200
+    },
+    "lane_gap_px": 44,
+    "band_h_px": 56,
+    "record_h_px": 18,
+    "record_offset_px": 22
+  },
+  "nodes": [
+    {
+      "key": "node3",
+      "title": "Node 3",
+      "subtitle": "QMUL · ref. TH2",
+      "record_start": "2025-04-16",
+      "record_end": "2026-02-11",
+      "train_end": "2025-10-31",
+      "val_start_min": "2025-08-31",
+      "val_start_max": "2025-09-14",
+      "val_start_label": "start by target",
+      "test_start": "2025-11-01",
+      "train_end_label": "31 Oct",
+      "test_start_label": "1 Nov",
+      "gaps": [
+        [
+          "2025-11-14",
+          "2025-11-24",
+          "11 d"
+        ],
+        [
+          "2025-11-29",
+          "2025-12-21",
+          "23 d"
+        ]
+      ]
+    },
+    {
+      "key": "node5",
+      "title": "Node 5",
+      "subtitle": "KEMP · ref. TH7",
+      "record_start": "2025-04-16",
+      "record_end": "2026-02-12",
+      "train_end": "2025-10-11",
+      "val_start_min": "2025-08-06",
+      "val_start_max": "2025-08-19",
+      "val_start_label": "start by target",
+      "test_start": "2025-11-01",
+      "train_end_label": "11 Oct",
+      "test_start_label": "1 Nov",
+      "gaps": [
+        [
+          "2025-09-05",
+          "2025-09-07",
+          ""
+        ],
+        [
+          "2025-09-12",
+          "2025-09-13",
+          ""
+        ],
+        [
+          "2025-09-26",
+          "2025-09-28",
+          ""
+        ],
+        [
+          "2025-10-12",
+          "2025-11-03",
+          "23 d"
+        ],
+        [
+          "2025-12-03",
+          "2025-12-16",
+          "14 d"
+        ]
+      ]
+    }
+  ],
+  "legend": [
+    {
+      "key": "gap",
+      "label": "record interruption longer than one day",
+      "detail": ""
+    }
+  ],
+  "title": "Temporal design of training, selection and evaluation",
+  "palette": {
+    "background": "#FFFFFF",
+    "train": "#E5DEEE",
+    "val": "#B8A8D8",
+    "test": "#4A3A7A",
+    "test_text": "#FFFFFF",
+    "band_text": "#2E2450",
+    "record": "#D6D8DD",
+    "gap": "#FFFFFF",
+    "gap_stroke": "#9AA0A8",
+    "axis_line": "#B5B5B5",
+    "grid_line": "#EDEDED",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#8A8A8A",
+    "title": "#4A3A7A",
+    "bracket": "#6B4A9E"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "title_px": 44,
+    "node_px": 36,
+    "node_sub_px": 26,
+    "band_px": 30,
+    "small_px": 26,
+    "tick_px": 28,
+    "legend_px": 26,
+    "legend_detail_px": 18
+  }
+}

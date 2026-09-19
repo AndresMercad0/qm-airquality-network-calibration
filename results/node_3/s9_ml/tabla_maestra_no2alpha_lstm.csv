@@ -1,0 +1,4 @@
+gas,config,model,n_train,n_test,n_features,R2_train,R2_test,RMSE,MAE,MBE,nRMSE,pearson_r,CEN_level,overfit_ratio,best_params,model_path
+NO2_alpha,A,LSTM,16813,5185,8,,,,,,,,Inaceptable,,"{'lstm_units': 32, 'lr': 0.001, 'fc_dim': 64, 'epochs': 100, 'dropout': 0.3, 'batch_size': 32}",no2_alpha_a_lstm.pt
+NO2_alpha,B,LSTM,16813,5185,9,,,,,,,,Inaceptable,,"{'lstm_units': 32, 'lr': 0.001, 'fc_dim': 64, 'epochs': 100, 'dropout': 0.3, 'batch_size': 32}",no2_alpha_b_lstm.pt
+NO2_alpha,C,LSTM,16813,5185,8,,,,,,,,Inaceptable,,"{'lstm_units': 32, 'lr': 0.001, 'fc_dim': 64, 'epochs': 100, 'dropout': 0.3, 'batch_size': 32}",no2_alpha_c_lstm.pt

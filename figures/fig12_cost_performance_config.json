@@ -1,0 +1,210 @@
+{
+  "paths": {
+    "output_html": "figures/output/fig12_cost_performance.html",
+    "output_image": "figures/output/fig12_cost_performance.png"
+  },
+  "viewport": {
+    "width_px": 1400,
+    "height_px": 546,
+    "device_scale_factor": 2
+  },
+  "plot": {
+    "margin": {
+      "top": 158,
+      "right": 50,
+      "bottom": 92,
+      "left": 132
+    },
+    "panel_gap_px": 44,
+    "panel_inner_pad_px": 22,
+    "panel_title_band_top_px": 70,
+    "tier_axis_h_px": 32,
+    "cost_legend_y_offset_px": 10,
+    "tier_axis_y_offset_px": 4,
+    "cost_legend_h_px": 38,
+    "y_min": -0.56,
+    "y_max": 1.06,
+    "y_tick_values": [
+      -0.5,
+      -0.25,
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "reference_line_y": 1.0
+  },
+  "palette": {
+    "background": "#FFFFFF",
+    "axis_line": "#B5B5B5",
+    "grid_line": "#EDEDED",
+    "zero_line": "#7A7A7A",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#8A8A8A",
+    "panel_subtitle": "#3F3F3F",
+    "dominant": "#4A3A7A",
+    "dominant_pastel": "#B8A8D8",
+    "dominant_fill": "#FFFFFF",
+    "callout_line": "#B8ACD1",
+    "annotation_text": "#6B4A9E",
+    "na_marker": "#D6D8DD",
+    "na_text": "#7B838E",
+    "reference_line": "#D98B8B",
+    "reference_text": "#A85555",
+    "low_band": "#E5DEEE",
+    "mid_band": "#B8A8D8",
+    "high_band": "#9582B8"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "axis_label_px": 30,
+    "tick_px": 26,
+    "tier_label_px": 28,
+    "legend_tier_px": 24,
+    "legend_cost_px": 24,
+    "legend_unit_px": 20,
+    "value_label_px": 26,
+    "method_label_px": 21,
+    "panel_title_px": 34,
+    "chip_title_px": 42
+  },
+  "overlay": {
+    "axis_linewidth": 1.8,
+    "zero_linewidth": 1.4,
+    "grid_linewidth": 1.0,
+    "ref_linewidth": 2.2,
+    "series_linewidth": 2.8,
+    "leader_linewidth": 1.6,
+    "point_radius": 10.5,
+    "point_stroke_w": 1.8,
+    "na_radius": 7.0,
+    "tier_band_alpha": 0.32
+  },
+  "panels": [
+    {
+      "key": "pm25",
+      "title": "PM2.5",
+      "points": [
+        {
+          "tier": "low",
+          "r2": 0.74,
+          "label": "XGB-B",
+          "available": true
+        },
+        {
+          "tier": "mid",
+          "r2": null,
+          "label": "n/a",
+          "available": false
+        },
+        {
+          "tier": "high",
+          "r2": 1.0,
+          "label": "LAQN ref.",
+          "available": true,
+          "definitional": true
+        }
+      ]
+    },
+    {
+      "key": "co",
+      "title": "CO",
+      "points": [
+        {
+          "tier": "low",
+          "r2": 0.792,
+          "label": "XGB-B",
+          "available": true
+        },
+        {
+          "tier": "mid",
+          "r2": 1.0,
+          "label": "comparator",
+          "available": true,
+          "definitional": true
+        },
+        {
+          "tier": "high",
+          "r2": null,
+          "label": "n/a",
+          "available": false
+        }
+      ]
+    },
+    {
+      "key": "no2",
+      "title": "NO₂",
+      "points": [
+        {
+          "tier": "low",
+          "r2": 0.227,
+          "label": "LGBM-C",
+          "available": true
+        },
+        {
+          "tier": "mid",
+          "r2": -0.158,
+          "label": "OLS + T/RH",
+          "available": true,
+          "label_pos": "below"
+        },
+        {
+          "tier": "high",
+          "r2": 1.0,
+          "label": "LAQN ref.",
+          "available": true,
+          "definitional": true
+        }
+      ]
+    },
+    {
+      "key": "o3",
+      "title": "O₃",
+      "points": [
+        {
+          "tier": "low",
+          "r2": -0.003,
+          "label": "RF-B",
+          "available": true,
+          "label_pos": "below"
+        },
+        {
+          "tier": "mid",
+          "r2": 1.0,
+          "label": "comparator",
+          "available": true,
+          "definitional": true
+        },
+        {
+          "tier": "high",
+          "r2": null,
+          "label": "n/a",
+          "available": false
+        }
+      ]
+    }
+  ],
+  "tiers": {
+    "low": {
+      "label": "Low",
+      "cost_text": "$26–42",
+      "cost_unit": "per sensor"
+    },
+    "mid": {
+      "label": "Mid",
+      "cost_text": "$200–270",
+      "cost_unit": "per channel"
+    },
+    "high": {
+      "label": "High",
+      "cost_text": "$27,000",
+      "cost_unit": "per station"
+    }
+  },
+  "top_band": {
+    "title": "Cost-performance trade-off",
+    "title_y_px": 8
+  }
+}

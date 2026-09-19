@@ -1,0 +1,117 @@
+{
+  "paths": {
+    "photo_png": "figures/source/KEMP_Node5.JPG",
+    "output_image": "figures/output/fig01_sites_overview.png"
+  },
+
+  "layout": {
+    "figsize_inches": [13.0, 7.5],
+    "width_ratios": [1.0, 0.85],
+    "wspace": 0.04
+  },
+
+  "typography": {
+    "fonts": ["Crimson Text", "Crimson Pro", "EB Garamond", "PT Serif", "Palatino", "Georgia", "serif"],
+    "marker_label_fontsize": 13,
+    "panel_label_fontsize": 22,
+    "banner_fontsize": 20,
+    "scalebar_fontsize": 15
+  },
+
+  "palette": {
+    "marker": "#4A3A7A",
+    "marker_edge": "#FFFFFF",
+    "zoom_rect": "#8A8A8A",
+    "connector": "#C9CDD6",
+    "panel_label_bg": "#FFFFFF",
+    "panel_label_fg": "#1F1F1F",
+    "banner_fg": "#5F6672",
+    "scalebar": "#1F1F1F",
+    "frame": "#B5B5B5",
+    "site_label_bg": "#FFFFFF",
+    "site_label_edge": "#D8DCE4",
+    "site_label_fg": "#1F1F1F"
+  },
+
+  "map": {
+    "lon_extent": [-0.082, -0.012],
+    "lat_extent": [51.4975, 51.5345],
+    "basemap_source": "CartoDB.Positron",
+    "basemap_zoom": 14,
+    "show_attribution": false,
+    "scalebar_km": 1.0,
+    "banner_text": "London, United Kingdom"
+  },
+
+  "photo_frame": {
+    "linewidth": 1.8
+  },
+
+  "map_frame": {
+    "linewidth": 1.8
+  },
+
+  "photo_annotations": {
+    "box_pad": 0.004,
+    "chip_inset": 0.012,
+    "fill_alpha": 0.16,
+    "box_linewidth": 3.0,
+    "title_fontsize": 13,
+    "sub_fontsize": 11.5,
+    "site_chips": [
+      { "text": "KEMP site", "x": 0.965, "y": 0.965, "ha": "right", "va": "top", "size": "title" },
+      { "text": "51.509477° N · 0.050541° W", "x": 0.965, "y": 0.895, "ha": "right", "va": "top", "size": "sub" }
+    ],
+    "tiers": [
+      {
+        "name": "tier3", "color": "#B14040",
+        "box": [0.202, 0.355, 0.467, 0.485],
+        "leader_from": "bottom_right", "leader_to": "top",
+        "title": { "text": "Tier 3 · High-cost", "x": 0.045, "y": 0.965, "ha": "left", "va": "top" },
+        "sub": { "text": "LAQN (TH7) reference\n~USD 27,000 / station", "x": 0.045, "y": 0.895, "ha": "left", "va": "top" }
+      },
+      {
+        "name": "tier2", "color": "#D09217",
+        "box": [0.636, 0.045, 0.096, 0.135],
+        "leader_from": "bottom_right", "leader_to": "left",
+        "title": { "text": "Tier 2 · Mid-cost", "x": 0.37, "y": 0.215, "ha": "center", "va": "center" },
+        "sub": { "text": "Alphasense electrochemical\n~USD 200-270 / sensor", "x": 0.37, "y": 0.135, "ha": "center", "va": "center" }
+      },
+      {
+        "name": "tier1", "color": "#2D7648",
+        "box": [0.768, 0.038, 0.097, 0.125],
+        "leader_from": "bottom_center", "leader_to": "top",
+        "title": { "text": "Tier 1 · Low-cost", "x": 0.80, "y": 0.325, "ha": "center", "va": "center" },
+        "sub": { "text": "Node 5 · MOS + optical\n~USD 7-42 / sensor", "x": 0.80, "y": 0.230, "ha": "center", "va": "center" }
+      }
+    ],
+    "equalize_sub_gap": { "reference": "tier2", "target": "tier1" }
+  },
+
+  "sites": [
+    {
+      "id": "QMUL",
+      "label": "Queen Mary University\nof London (QMUL)",
+      "lat": 51.522530,
+      "lon": -0.042155,
+      "label_offset_px": [-20, 0],
+      "ha": "right"
+    },
+    {
+      "id": "KEMP",
+      "label": "King Edward Memorial\nPark (KEMP)",
+      "lat": 51.509477,
+      "lon": -0.050541,
+      "label_offset_px": [-20, 0],
+      "ha": "right"
+    }
+  ],
+
+  "connector": {
+    "linewidth": 2.2,
+    "linestyle": "--",
+    "alpha": 0.9,
+    "shrink_map_pts": 10,
+    "shrink_photo_pts": 6
+  }
+}

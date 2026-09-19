@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "QM Air Quality Network Calibration: calibration pipeline for the low-cost and mid-cost sensors of a multi-tier IoT air-quality network in London"
+authors:
+  - family-names: "Mercado-Velazquez"
+    given-names: "Andres Aharhel"
+    affiliation: "Queen Mary University of London"
+  - family-names: "Poslad"
+    given-names: "Stefan"
+    affiliation: "Queen Mary University of London"
+  - family-names: "Escamilla-Ambrosio"
+    given-names: "Ponciano Jorge"
+    affiliation: "Instituto Politecnico Nacional"
+year: 2026
+url: "https://github.com/AndresMercad0/qm-airquality-network-calibration"
+license: MIT
+references:
+  - type: conference-paper
+    title: "Design and Implementation of a Low-Cost IoT Air-Quality Monitoring Network at Queen Mary University of London Mile End Campus"
+    doi: "10.1007/978-3-032-19019-2_7"
+    year: 2026

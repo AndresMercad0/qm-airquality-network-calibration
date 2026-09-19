@@ -1,0 +1,73 @@
+{
+  "paths": {
+    "input_csv": "data/node_3/s4_preprocess/node_3_PREPROCESS_wide_data_2025-04-16_to_2026-02-11.csv",
+    "output_html": "figures/output/fig03_r0_dynamic.html",
+    "output_image": "figures/output/fig03_r0_dynamic.png"
+  },
+
+  "data": {
+    "sensor_column": "NO2",
+    "start": "2025-06-10",
+    "end": "2025-07-01",
+    "nocturnal_hours": [0, 5],
+    "resample_rule": "1h"
+  },
+
+  "viewport": {
+    "width_px": 1100,
+    "height_px": 760,
+    "device_scale_factor": 2
+  },
+
+  "plot": {
+    "margin": { "top": 100, "right": 56, "bottom": 104, "left": 130 },
+    "x_tick_days": [10, 15, 20, 25, 30],
+    "y_tick_values": [100, 300, 1000, 3000]
+  },
+
+  "legend": {
+    "align": "right",
+    "x_off_px": 0,
+    "y_off_px": 28,
+    "width_px": 490,
+    "row_h_px": 38,
+    "note_px": 20
+  },
+
+  "palette": {
+    "background": "#FFFFFF",
+    "rs_line": "#A9AFB9",
+    "night_dot": "#B8A8D8",
+    "night_dot_edge": "#FFFFFF",
+    "r0_line": "#4A3A7A",
+    "axis_line": "#B5B5B5",
+    "grid_line": "#EDEDED",
+    "legend_border": "#D8DCE4",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#8A8A8A",
+    "r0_text": "#4A3A7A",
+    "night_text": "#6B4A9E"
+  },
+
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "axis_label_px": 32,
+    "tick_px": 30,
+    "inline_label_px": 24,
+    "inline_caption_px": 24
+  },
+
+  "overlay": {
+    "rs_linewidth": 1.9,
+    "rs_opacity": 0.9,
+    "night_marker_radius": 5.5,
+    "night_opacity": 0.92,
+    "r0_linewidth": 4.2,
+    "r0_marker_radius": 5.8,
+    "axis_linewidth": 1.8,
+    "grid_linewidth": 1.0
+  },
+
+  "annotations": {}
+}

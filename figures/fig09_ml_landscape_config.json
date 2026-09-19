@@ -1,0 +1,92 @@
+{
+  "paths": {
+    "node3_ml": "results/node_3/s9_ml/tabla_maestra_v6.csv",
+    "node5_ml": "results/node_5/s9_ml/tabla_maestra_v6.csv",
+    "output_html": "figures/output/fig09_ml_landscape.html",
+    "output_image": "figures/output/fig09_ml_landscape.png"
+  },
+  "viewport": {
+    "width_px": 810,
+    "height_px": 388,
+    "device_scale_factor": 3
+  },
+  "plot": {
+    "margin": {
+      "top": 36,
+      "right": 16,
+      "bottom": 20,
+      "left": 48
+    },
+    "cell_w_px": 42,
+    "cell_h_px": 24,
+    "cell_radius_px": 3,
+    "intra_group_gap_px": 2,
+    "inter_group_gap_px": 16,
+    "row_gap_px": 3,
+    "node_gap_px": 20,
+    "bottom_axis_gap_px": 12,
+    "gas_label_gap_px": 18,
+    "sensor_label_gap_px": 20,
+    "model_order": [
+      "DNN",
+      "LSTM",
+      "LightGBM",
+      "RF",
+      "XGBoost"
+    ],
+    "config_order": [
+      "A",
+      "B",
+      "C"
+    ],
+    "gas_order": [
+      "PM2.5",
+      "CO",
+      "NO2",
+      "NO2_alpha",
+      "O3"
+    ],
+    "color_scale_max": 0.85,
+    "neg_clip": 0.5
+  },
+  "palette": {
+    "background": "#FFFFFF",
+    "pos_bg_min": "#F0EDF7",
+    "pos_bg_max": "#4A3A7A",
+    "zero_bg": "#EFEEEE",
+    "neg_bg_max": "#D5D5D5",
+    "nan_bg": "#F8F8F8",
+    "cell_border": "#E5E5E5",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#A0A0A0",
+    "text_on_dark": "#FFFFFF",
+    "text_negative": "#6B6B6B",
+    "node_title": "#3F3F3F",
+    "header_gas": "#1F1F1F",
+    "header_config": "#5F6672",
+    "model_label": "#3F3F3F",
+    "title_main": "#1F1F1F",
+    "subtitle": "#5F6672",
+    "legend_text": "#5F6672"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "title_main_px": 20,
+    "subtitle_px": 14,
+    "node_title_px": 13,
+    "header_gas_px": 16,
+    "header_config_px": 13,
+    "sensor_label_px": 11,
+    "model_label_px": 14,
+    "cell_value_px": 12,
+    "legend_label_px": 12
+  },
+  "overlay": {
+    "cell_border_w": 0.6,
+    "node_underline_w": 0.8,
+    "legend_bar_w": 100,
+    "legend_bar_h": 8,
+    "white_text_threshold": 0.55
+  }
+}

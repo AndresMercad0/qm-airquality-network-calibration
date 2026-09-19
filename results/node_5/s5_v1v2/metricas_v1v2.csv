@@ -1,0 +1,5 @@
+r2,rmse,mae,mbe,nrmse,nivel,n,gas,version,ref
+-2527.6611,3966.94,1868.55,1868.55,1884.7,Inaceptable,23226,CO,v1v2,co_mid_alphasense_ug_m3_aan803
+-111.1357,458.53,144.92,69.67,766.3,Inaceptable,22479,O3,v1v2,o3_mid_alphasense_ug_m3_aan803
+-683588.7879,10197.95,7308.05,7306.23,60249.0,Inaceptable,22922,NO2,v1v2,no2_high_met_one_ug_m3
+0.0992,5.19,4.21,-3.09,56.1,Inaceptable,18817,PM2.5,raw_vs_ref,pm2_5_high_met_one_ug_m3

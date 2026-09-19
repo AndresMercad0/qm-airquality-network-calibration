@@ -1,0 +1,124 @@
+{
+  "paths": {
+    "node3_costs": "results/node_3/s9_ml/metricas_por_nivel_de_costo_v6.csv",
+    "node3_ml": "results/node_3/s9_ml/tabla_maestra_locked_v6.csv",
+    "node5_costs": "results/node_5/s9_ml/metricas_por_nivel_de_costo_v6.csv",
+    "node5_ml": "results/node_5/s9_ml/tabla_maestra_locked_v6.csv",
+    "output_html": "figures/output/fig06_r2_comparison.html",
+    "output_image": "figures/output/fig06_r2_comparison.png"
+  },
+  "viewport": {
+    "width_px": 1400,
+    "height_px": 640,
+    "device_scale_factor": 2
+  },
+  "plot": {
+    "layout": "side_by_side",
+    "margin": {
+      "top": 170,
+      "right": 60,
+      "bottom": 145,
+      "left": 140
+    },
+    "panel_gap_px": 90,
+    "panel_inner_pad_px": -8,
+    "y_min": -0.65,
+    "y_max": 1.1,
+    "y_tick_values": [
+      -0.5,
+      -0.25,
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "zero_emphasize": true,
+    "bar_width_px": 38,
+    "intra_gap_px": 16,
+    "bar_corner_radius_px": 4,
+    "pollutant_order": [
+      "PM2.5",
+      "CO",
+      "O3"
+    ]
+  },
+  "palette": {
+    "background": "#FFFFFF",
+    "manufacturer_bar": "#DADFE5",
+    "ols_bar": "#B8A8D8",
+    "ml_bar": "#4A3A7A",
+    "manufacturer_text": "#7B838C",
+    "ols_text": "#6B4A9E",
+    "ml_text": "#4A3A7A",
+    "axis_line": "#B5B5B5",
+    "zero_line": "#7A7A7A",
+    "grid_line": "#EDEDED",
+    "callout_line": "#B8ACD1",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#8A8A8A",
+    "panel_subtitle": "#3F3F3F",
+    "footer_text": "#7B838C"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "axis_label_px": 30,
+    "tick_px": 26,
+    "value_label_ml_px": 24,
+    "value_label_ols_px": 24,
+    "model_subscript_px": 22,
+    "pollutant_label_px": 30,
+    "sensor_label_px": 22,
+    "panel_title_px": 32,
+    "panel_subtitle_px": 22,
+    "chip_label_px": 28,
+    "footer_px": 22,
+    "ml_callout_px": 18
+  },
+  "overlay": {
+    "axis_linewidth": 1.8,
+    "zero_linewidth": 1.4,
+    "grid_linewidth": 1.0,
+    "callout_linewidth": 1.5,
+    "trunc_arrow_size": 9,
+    "chip_swatch_w": 40,
+    "chip_swatch_h": 14,
+    "chip_swatch_gap": 14,
+    "chip_row_gap": 40,
+    "ml_callout_leader_color": "#B8ACD1",
+    "ml_callout_leader_opacity": 0.65,
+    "ml_callout_leader_dash": "2 3"
+  },
+  "layout": {
+    "chip_row_y_px": 62,
+    "title_row_y_px": 132
+  },
+  "ml_callouts": {
+    "PM2.5": {
+      "placement": "right_top",
+      "gap_x_px": 6
+    },
+    "CO": {
+      "placement": "right_top",
+      "gap_x_px": 6
+    },
+    "O3": {
+      "placement": "above_center_short",
+      "offset_above_px": 28
+    }
+  },
+  "ml_callouts_per_panel": {
+    "node3": {
+      "O3": {
+        "offset_above_px": 55
+      }
+    }
+  },
+  "method_label_ml": "Validation-selected ML",
+  "ref_labels": {
+    "PM2.5": "vs LAQN BAM",
+    "CO": "vs CO-B4 comparator",
+    "O3": "vs OX-B431 comparator"
+  }
+}

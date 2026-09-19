@@ -1,0 +1,136 @@
+{
+  "paths": {
+    "metrics_csv": "results/cross_node/single_basis_metrics_node3.csv",
+    "output_html": "figures/output/fig07_no2_three_tier.html",
+    "output_image": "figures/output/fig07_no2_three_tier.png"
+  },
+  "ml_low": [
+    "LightGBM",
+    "C"
+  ],
+  "ml_mid": [
+    "LightGBM",
+    "B"
+  ],
+  "node_title": "Node 3",
+  "node_subtitle": "QMUL · Mile End Road · ref. TH2 · test period",
+  "chip_labels": {
+    "manufacturer": "Manufacturer",
+    "ols": "OLS + T/RH",
+    "ml": "Validation-selected ML",
+    "reference": "Reference (by def.)"
+  },
+  "viewport": {
+    "width_px": 2500,
+    "height_px": 820,
+    "device_scale_factor": 2
+  },
+  "layout": {
+    "node_title_y_px": 58,
+    "chip_y_px": 150
+  },
+  "plot": {
+    "margin": {
+      "top": 250,
+      "right": 30,
+      "bottom": 150,
+      "left": 160
+    },
+    "panel_gap_px": 150,
+    "panel_inner_pad_px": 8,
+    "bar_width_px": 48,
+    "intra_gap_px": 14,
+    "bar_corner_radius_px": 4
+  },
+  "metrics": [
+    {
+      "key": "r2",
+      "title": "(a) R²",
+      "axis_label": "R² (test)",
+      "y_min": -0.85,
+      "y_max": 1.18,
+      "ticks": [
+        -0.5,
+        -0.25,
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "ref_label": "1 by def.",
+      "axis_label_offset_px": 98
+    },
+    {
+      "key": "r",
+      "title": "(b) Pearson r",
+      "axis_label": "r (test)",
+      "y_min": 0.0,
+      "y_max": 1.18,
+      "ticks": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "ref_label": "1 by def.",
+      "axis_label_offset_px": 98
+    },
+    {
+      "key": "mbe",
+      "title": "(c) Mean bias error",
+      "axis_label": "MBE (µg/m³)",
+      "y_min": -12.0,
+      "y_max": 12.0,
+      "ticks": [
+        -10,
+        -5,
+        0,
+        5,
+        10
+      ],
+      "ref_label": "0 by def.",
+      "axis_label_offset_px": 98
+    }
+  ],
+  "palette": {
+    "background": "#FFFFFF",
+    "manufacturer_bar": "#DADFE5",
+    "ols_bar": "#B8A8D8",
+    "ml_bar": "#4A3A7A",
+    "reference_bar": "#D98B8B",
+    "manufacturer_text": "#7B838C",
+    "ols_text": "#6B4A9E",
+    "ml_text": "#4A3A7A",
+    "reference_text": "#A85555",
+    "axis_line": "#B5B5B5",
+    "zero_line": "#7A7A7A",
+    "grid_line": "#EDEDED",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#8A8A8A",
+    "panel_subtitle": "#3F3F3F"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "axis_label_px": 34,
+    "tick_px": 30,
+    "value_label_px": 30,
+    "sensor_label_px": 27,
+    "tier_label_px": 30,
+    "panel_title_px": 38,
+    "panel_subtitle_px": 27,
+    "chip_label_px": 32
+  },
+  "overlay": {
+    "axis_linewidth": 1.8,
+    "zero_linewidth": 1.4,
+    "grid_linewidth": 1.0,
+    "trunc_arrow_size": 10,
+    "chip_swatch_w": 46,
+    "chip_swatch_h": 16,
+    "chip_swatch_gap": 10,
+    "chip_row_gap": 34
+  }
+}

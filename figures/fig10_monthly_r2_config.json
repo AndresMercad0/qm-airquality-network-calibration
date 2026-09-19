@@ -1,0 +1,122 @@
+{
+  "paths": {
+    "node5_drift": "results/node_5/s9_ml/metricas_drift_mensual.csv",
+    "output_html": "figures/output/fig10_monthly_r2.html",
+    "output_image": "figures/output/fig10_monthly_r2.png"
+  },
+  "viewport": {
+    "width_px": 1400,
+    "height_px": 290,
+    "device_scale_factor": 3
+  },
+  "plot": {
+    "margin": {
+      "top": 56,
+      "right": 22,
+      "bottom": 70,
+      "left": 80
+    },
+    "panel_h_gap_px": 28,
+    "panel_v_gap_px": 0,
+    "y_min": -0.5,
+    "y_max": 1.05,
+    "y_tick_values": [
+      -0.5,
+      0.0,
+      0.5,
+      1.0
+    ],
+    "x_tick_skip": 1,
+    "marker_radius": 3.4,
+    "line_width": 1.8,
+    "test_period_start_month": "2025-11",
+    "annotate_n_obs": true,
+    "n_obs_dy": 40,
+    "show_mini_legend": false,
+    "show_bottom_legend": false
+  },
+  "panels": [
+    {
+      "gas": "PM2.5",
+      "model": "RF",
+      "config": "C",
+      "title_html": "PM<tspan baseline-shift=\"sub\" font-size=\"0.72em\">2.5</tspan>",
+      "sensor": "SPS30",
+      "model_label": "RF-C",
+      "csv": "results/node_5/s9_ml/metricas_ols_ml_mensual_v6.csv"
+    },
+    {
+      "gas": "CO",
+      "model": "RF",
+      "config": "A",
+      "title_html": "CO",
+      "sensor": "GM-702B",
+      "model_label": "RF-A",
+      "csv": "results/node_5/s9_ml/metricas_ols_ml_mensual_v6.csv"
+    },
+    {
+      "gas": "NO2",
+      "model": "XGBoost",
+      "config": "B",
+      "title_html": "NO<tspan baseline-shift=\"sub\" font-size=\"0.72em\">2</tspan>",
+      "sensor": "GM-102B",
+      "model_label": "XGB-B",
+      "extra_series": {
+        "gas": "NO2_alpha",
+        "model": "OLS_Alphasense",
+        "config": "-",
+        "primary_label": "GM-102B + ML",
+        "extra_label": "Alphasense + OLS",
+        "line_color_key": "alphasense_line",
+        "marker_fill_key": "alphasense_marker",
+        "csv": "results/node_5/s9_ml/metricas_alphasense_no2_ols_mensual_v6.csv",
+        "basis": "train_only"
+      },
+      "csv": "results/node_5/s9_ml/metricas_ols_ml_mensual_v6.csv"
+    },
+    {
+      "gas": "O3",
+      "model": "RF",
+      "config": "B",
+      "title_html": "O<tspan baseline-shift=\"sub\" font-size=\"0.72em\">3</tspan>",
+      "sensor": "MQ131",
+      "model_label": "RF-B"
+    }
+  ],
+  "palette": {
+    "background": "#FFFFFF",
+    "line": "#4A3A7A",
+    "marker_fill": "#4A3A7A",
+    "marker_stroke": "#FFFFFF",
+    "axis_line": "#B5B5B5",
+    "grid_line": "#EDEDED",
+    "boundary_line": "#9DA3AC",
+    "test_bg": "#F6F4F9",
+    "zero_line": "#C4C4C4",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#8A8A8A",
+    "panel_title": "#1F1F1F",
+    "model_label": "#4A3A7A",
+    "alphasense_line": "#D98B8B",
+    "alphasense_marker": "#D98B8B"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "title_main_px": 19,
+    "subtitle_px": 14,
+    "panel_title_px": 23,
+    "model_label_px": 19,
+    "tick_px": 16,
+    "axis_label_px": 26,
+    "boundary_label_px": 22,
+    "panel_letter_px": 20,
+    "n_obs_px": 11
+  },
+  "overlay": {
+    "axis_linewidth": 1.0,
+    "grid_linewidth": 0.8,
+    "marker_stroke_w": 1.4,
+    "boundary_dash": "3 3"
+  }
+}

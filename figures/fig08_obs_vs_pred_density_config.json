@@ -1,0 +1,114 @@
+{
+  "paths": {
+    "output_html": "figures/output/fig08_obs_vs_pred_density.html",
+    "output_image": "figures/output/fig08_obs_vs_pred_density.png"
+  },
+  "viewport": {
+    "width_px": 1730,
+    "height_px": 460,
+    "device_scale_factor": 2
+  },
+  "plot": {
+    "margin": {
+      "top": 96,
+      "right": 30,
+      "bottom": 80,
+      "left": 90
+    },
+    "panel_gap_px": 30,
+    "n_bins": 34,
+    "x_padding_frac": 0.04
+  },
+  "panels": [
+    {
+      "gas": "PM2.5",
+      "model": "XGBoost",
+      "config": "B",
+      "title_html": "(a) PM<tspan baseline-shift=\"sub\" font-size=\"0.75em\">2.5</tspan>",
+      "sensor_label": "SPS30",
+      "model_label": "XGB-B",
+      "ref_label": "ref: LAQN (TH2)",
+      "ref_type": "LAQN",
+      "x_max": 75,
+      "y_max": 75
+    },
+    {
+      "gas": "CO",
+      "model": "XGBoost",
+      "config": "B",
+      "title_html": "(b) CO",
+      "sensor_label": "GM-702B",
+      "model_label": "XGB-B",
+      "ref_label": "ref: Alphasense CO-B4",
+      "ref_type": "ALPHASENSE",
+      "x_max": 600,
+      "y_max": 600
+    },
+    {
+      "gas": "NO2",
+      "model": "LightGBM",
+      "config": "C",
+      "title_html": "(c) NO<tspan baseline-shift=\"sub\" font-size=\"0.75em\">2</tspan> low-cost",
+      "sensor_label": "GM-102B",
+      "model_label": "LGBM-C",
+      "ref_label": "ref: LAQN (TH2)",
+      "ref_type": "LAQN",
+      "x_max": 70,
+      "y_max": 70
+    },
+    {
+      "gas": "NO2_alpha",
+      "model": "LightGBM",
+      "config": "B",
+      "title_html": "(d) NO<tspan baseline-shift=\"sub\" font-size=\"0.75em\">2</tspan> mid-cost",
+      "sensor_label": "Alphasense B43F",
+      "model_label": "LGBM-B",
+      "ref_label": "ref: LAQN (TH2)",
+      "ref_type": "LAQN",
+      "x_max": 70,
+      "y_max": 70
+    },
+    {
+      "gas": "O3",
+      "model": "RF",
+      "config": "B",
+      "title_html": "(e) O<tspan baseline-shift=\"sub\" font-size=\"0.75em\">3</tspan>",
+      "sensor_label": "MQ131",
+      "model_label": "RF-B",
+      "ref_label": "ref: Alphasense OX-B431",
+      "ref_type": "ALPHASENSE",
+      "x_max": 90,
+      "y_max": 90
+    }
+  ],
+  "palette": {
+    "background": "#FFFFFF",
+    "density_low": "#E8E2F2",
+    "density_high": "#4A3A7A",
+    "diag_line": "#9DA3AC",
+    "axis_line": "#B5B5B5",
+    "grid_line": "#EDEDED",
+    "text_primary": "#1F1F1F",
+    "text_secondary": "#5F6672",
+    "text_muted": "#8A8A8A",
+    "r2_text": "#4A3A7A",
+    "ref_text": "#5F6672"
+  },
+  "typography": {
+    "font_stack": "'Crimson Text', 'Crimson Pro', 'EB Garamond', 'PT Serif', Palatino, Georgia, serif",
+    "title_px": 26,
+    "sensor_px": 15,
+    "model_px": 20,
+    "ref_px": 18,
+    "tick_px": 20,
+    "axis_label_px": 22,
+    "annot_px": 22
+  },
+  "overlay": {
+    "axis_linewidth": 1.6,
+    "diag_linewidth": 1.2,
+    "ref_label_pad_x": 8,
+    "ref_label_pad_y": 8
+  },
+  "master_table": "tabla_maestra_v6.csv"
+}

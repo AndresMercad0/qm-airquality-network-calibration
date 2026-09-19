@@ -1,0 +1,11 @@
+r2,rmse,nrmse,mae,mbe,pearson_r,nivel,n,mean_ref,mean_est,gas,nivel_costo,metodo,referencia,col_estimado,col_referencia
+-0.7045,13.06,76.4,10.52,3.13,0.4972,Inaceptable,22091,17.08,20.21,NO2,Mid-cost,Cal. parámetros de fábrica (AAN-803-05),TH2_MER,no2_mid_alphasense_ug_m3_aan803,no2_high_met_one_ug_m3
+0.328,8.2,48.0,6.34,0.0,0.5727,Marginal,22091,17.08,17.08,NO2,Mid-cost OLS,OLS colocalización (Alphasense NO₂-B43F),TH2_MER,no2_mid_alphasense_ug_m3_ols,no2_high_met_one_ug_m3
+-1365242.5077,11651.22,67485.2,9175.29,9174.19,0.5807,Inaceptable,23368,17.26,9191.45,NO2,Low-cost curvas fab.,Curva fabricante GM-102B,TH2_MER,no2_low_mgsv2_ug_m3_curvas_fabricante,no2_high_met_one_ug_m3
+-0.092,10.42,60.4,6.45,1.34,0.6184,Inaceptable,23368,17.26,18.6,NO2,Low-cost OLS,OLS colocalización,TH2_MER,no2_low_mgsv2_ug_m3_ols,no2_high_met_one_ug_m3
+-507.2393,1917.0,1321.9,1471.19,1471.19,0.6291,Inaceptable,23907,145.02,1616.21,CO,Low-cost curvas fab.,Curva fabricante GM-702B,Alphasense CO-B4 (cal. fab.),co_low_mgsv2_ug_m3_curvas_fabricante,co_mid_alphasense_ug_m3_aan803
+0.5359,57.93,39.9,42.59,0.02,0.7321,Aceptable,23907,145.02,145.03,CO,Low-cost OLS,OLS colocalización,Alphasense CO-B4 (cal. fab.),co_low_mgsv2_ug_m3_ols,co_mid_alphasense_ug_m3_aan803
+-47.6072,262.77,587.7,85.49,37.54,0.1706,Inaceptable,23904,44.71,82.25,O3,Low-cost curvas fab.,Curva fabricante MQ131,Alphasense OX-B431 (cal. fab.),o3_low_mq131_ug_m3_curvas_fabricante,o3_mid_alphasense_ug_m3_aan803
+0.2679,32.25,72.1,21.75,-4.61,0.5525,Inaceptable,23904,44.71,40.11,O3,Low-cost OLS,OLS colocalización,Alphasense OX-B431 (cal. fab.),o3_low_mq131_ug_m3_ols,o3_mid_alphasense_ug_m3_aan803
+0.5476,4.23,54.5,2.96,-0.75,0.8354,Marginal,23087,7.76,7.01,PM2.5,Low-cost (cal. fabricante),Calibración del fabricante,TH2_MER,pm25_low_raw,pm2_5_high_met_one_ug_m3
+0.6964,3.47,44.7,2.43,0.07,0.8356,Aceptable,23087,7.76,7.83,PM2.5,Low-cost OLS,OLS colocalización,TH2_MER,pm2_5_low_sps30_ug_m3_ols,pm2_5_high_met_one_ug_m3
