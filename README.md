@@ -88,6 +88,8 @@ The snapshot holds the reference records as downloaded on 15 February 2026, whic
 
 Released under the [MIT Licence](LICENSE). If you use this code in academic work, please cite it (see [CITATION.cff](CITATION.cff)) and the papers above.
 
+Release v1.0.0 is archived on Zenodo: https://doi.org/10.5281/zenodo.22850320. The DOI https://doi.org/10.5281/zenodo.22850319 resolves to the latest archived version.
+
 ## Contact
 
 Andres Aharhel Mercado-Velazquez, IoT2US Lab, School of Electronic Engineering and Computer Science, Queen Mary University of London. a.mercadovelazquez@qmul.ac.uk

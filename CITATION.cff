@@ -24,6 +24,11 @@ authors:
     affiliation: "London Borough of Tower Hamlets"
 version: "1.0.0"
 date-released: "2026-09-19"
+doi: "10.5281/zenodo.22850320"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22850319"
+    description: "Concept DOI, which resolves to the latest archived version"
 url: "https://github.com/AndresMercad0/qm-airquality-network-calibration"
 license: MIT
 references:
