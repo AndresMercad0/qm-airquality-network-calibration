@@ -6,17 +6,35 @@ authors:
   - family-names: "Mercado-Velazquez"
     given-names: "Andres Aharhel"
     affiliation: "Queen Mary University of London"
+    orcid: "https://orcid.org/0009-0009-7541-7066"
   - family-names: "Poslad"
     given-names: "Stefan"
     affiliation: "Queen Mary University of London"
+    orcid: "https://orcid.org/0000-0002-3156-9609"
   - family-names: "Escamilla-Ambrosio"
     given-names: "Ponciano Jorge"
     affiliation: "Instituto Politecnico Nacional"
-year: 2026
+    orcid: "https://orcid.org/0000-0003-3772-3651"
+  - family-names: "Mosler"
+    given-names: "Gioia"
+    affiliation: "Queen Mary University of London"
+    orcid: "https://orcid.org/0000-0002-6900-4080"
+  - family-names: "Islam"
+    given-names: "Muhammad"
+    affiliation: "London Borough of Tower Hamlets"
+version: "1.0.0"
+date-released: "2026-09-19"
 url: "https://github.com/AndresMercad0/qm-airquality-network-calibration"
 license: MIT
 references:
   - type: conference-paper
     title: "Design and Implementation of a Low-Cost IoT Air-Quality Monitoring Network at Queen Mary University of London Mile End Campus"
+    authors:
+      - family-names: "Mercado-Velazquez"
+        given-names: "Andres Aharhel"
+      - family-names: "Poslad"
+        given-names: "Stefan"
+      - family-names: "Escamilla-Ambrosio"
+        given-names: "Ponciano Jorge"
     doi: "10.1007/978-3-032-19019-2_7"
     year: 2026
